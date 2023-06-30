@@ -81,6 +81,18 @@ body {
   }
 }
 
+.section-py {
+  @apply py-16 md:py-20;
+}
+
+.section-pt {
+  @apply pt-16 md:pt-20;
+}
+
+.section-pb {
+  @apply pb-16 md:pb-20;
+}
+
 .container {
   @apply mx-auto max-w-6xl;
 }
