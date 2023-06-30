@@ -6,7 +6,7 @@ import { CheckCircle } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="my-bg-split px-6 py-16">
+    <section className="my-bg-split section-pb px-6">
       <div className="container">
         <div className="grid overflow-hidden rounded-lg bg-[#005E54] md:grid-cols-2 md:rounded-3xl">
           <div className="flex flex-col justify-center gap-4 px-6 py-10 md:p-16">

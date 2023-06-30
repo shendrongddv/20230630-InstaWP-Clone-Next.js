@@ -81,6 +81,14 @@ body {
   }
 }
 
+.h2 {
+  @apply text-xl md:text-3xl;
+}
+
+.h3 {
+  @apply text-lg md:text-2xl;
+}
+
 .section-py {
   @apply py-16 md:py-20;
 }
