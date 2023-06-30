@@ -1,8 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import imgBrand from "../../public/logo-white.svg";
-import { Button } from "../ui/button";
-import Link from "next/link";
 
 import { dummyFooterLinks } from "@/dummy";
 
@@ -15,7 +14,9 @@ const Footer = () => {
           <div className="flex flex-col gap-8 md:flex-row md:justify-between">
             {/* Col */}
             <div className="w-full md:w-1/4">
-              <Image src={imgBrand} alt="InstaWP" className="h-10 w-auto" />
+              <Link href="/">
+                <Image src={imgBrand} alt="InstaWP" className="h-10 w-auto" />
+              </Link>
               <p className="mt-4">Launch WordPress sites within seconds.</p>
             </div>
 
