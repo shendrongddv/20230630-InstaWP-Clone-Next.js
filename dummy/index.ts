@@ -432,3 +432,62 @@ export const blogSmall = [
     image: "blog-3.webp",
   },
 ];
+
+// faqSmall
+export const faqSmall = [
+  {
+    id: "efbd265f-3c2d-5316-be6f-6ab79ff22359",
+    question: "What is an Instant Site?",
+    answer:
+      "InstaWP can create WordPress sites within a second. These are regular WordPress sites in which you can install any plugin, or theme or add content to the site.",
+  },
+  {
+    id: "4fdfc07c-8528-5a03-acf5-6b4bad56facf",
+    question: "What is a template?",
+    answer:
+      "A template is a snapshot or blueprint of your WordPress site created on InstaWP. You can create sites or create sandbox using templates.",
+  },
+  {
+    id: "68253e33-b93c-5551-a762-30d9640003d3",
+    question: "What is the life time of a site?",
+    answer:
+      "The lifespan of a site depends on the plan you have with InstaWP. In the free plan, sites have an expiration time of 48 hours, but can be restored once per month. In paid plans, the lifespan of a site can be extended and can be marked to not expire.",
+  },
+  {
+    id: "4a968771-7227-580f-b5e3-6e161c168a19",
+    question: "Can I use a site forever?",
+    answer:
+      "Yes, in paid plans, you can mark a site as “reserved” so that it will never expire.",
+  },
+  {
+    id: "c4262c32-2b48-5343-bdbe-be4a356d5329",
+    question: "How do I create sandboxes for my plugin or theme?",
+    answer:
+      "You can create sandboxes using InstaWP, we call them Shared Templates. You can read our guide to learn more on how to create a WordPress sandbox, also see these examples.",
+  },
+  {
+    id: "97a32e36-aeb2-53b5-a263-f6154c09c9b5",
+    question: "Can I change PHP version?",
+    answer:
+      "Yes, you can test PHP versions for new & existing website, we support PHP versions 5.6, 7.x, 8.0, 8.1 and 8.2.",
+  },
+  {
+    id: "1a217f9f-6d92-50a4-993d-6fb57e2d8b12",
+    question: "Can I migrate my site from InstaWP to a hosting provider?",
+    answer:
+      "Yes, you can migrate a site to any hosting provider using a migration plugin or our built-in Migrator tool.",
+  },
+  {
+    id: "70c79e81-0e57-576a-9679-efdc319b3cf0",
+    question:
+      "How can I import / clone my production site into InstaWP for testing?",
+    answer:
+      "You can use our WordPress staging plugin to create a 1-click staging version of your website.",
+  },
+  {
+    id: "b773fdc7-c191-541c-8a08-bf6bd9116fda",
+    question: "Who is InstaWP meant for?",
+    answer:
+      "InstaWP is an excellent solution for designers, developers, agencies, enterprises, and others who are working with WordPress every day. It is meant to become your daily driver and ease up WordPress development workflow.",
+  },
+];

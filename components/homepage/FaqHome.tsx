@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaqAccordion } from "../FaqAccordion";
 
 const FaqHome = () => {
   return (
@@ -17,8 +18,8 @@ const FaqHome = () => {
           </p>
 
           {/* FAQ */}
-          <div className="mt-8 rounded-lg border bg-slate-200 p-6">
-            render FAQ
+          <div className="mt-10">
+            <FaqAccordion />
           </div>
         </div>
       </div>

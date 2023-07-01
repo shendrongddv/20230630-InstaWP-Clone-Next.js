@@ -6,6 +6,7 @@ import FeaturesA from "@/components/homepage/FeaturesA";
 import Hero from "@/components/homepage/Hero";
 import Integrations from "@/components/homepage/Integrations";
 import Stats from "@/components/homepage/Stats";
+import UserReviews from "@/components/homepage/UserReviews";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Clients />
       <FeaturesA />
+      <UserReviews />
       <Integrations />
       <FaqHome />
       <BlogSmall />
