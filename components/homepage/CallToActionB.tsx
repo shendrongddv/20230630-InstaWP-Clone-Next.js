@@ -4,7 +4,7 @@ import imgAssetB from "../../public/newsletter-before.webp";
 import { Button } from "../ui/button";
 import { CheckCircle } from "lucide-react";
 
-const CTA = () => {
+const CallToActionB = () => {
   return (
     <section className="my-bg-split section-pb px-6">
       <div className="container">
@@ -55,4 +55,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default CallToActionB;

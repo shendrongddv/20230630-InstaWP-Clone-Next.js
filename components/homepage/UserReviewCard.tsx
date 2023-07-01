@@ -20,22 +20,22 @@ const UserReviewCard: React.FC<UserReviewCardProps> = ({
 }) => {
   return (
     <div className="w-full rounded-2xl bg-slate-100 p-6 md:w-[48%] md:p-8">
-      <p className="text-lg font-semibold">{review}</p>
-      <div className="mt-6 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
+      <p className="font-semibold md:text-lg">{review}</p>
+      <div className="mt-6 flex items-center justify-between gap-1">
+        <div className="flex items-center gap-3">
           <div className="aspect-square overflow-hidden rounded-full shadow">
             <Image
               src={`/persons/${imageName}`}
               alt={name}
-              width={40}
-              height={40}
-              className="h-14 w-auto"
+              width={50}
+              height={50}
+              className="h-12 w-auto"
             />
           </div>
 
           <div>
-            <h3 className="font-display font-bold">{name}</h3>
-            <span className="text-sm font-bold opacity-75">
+            <h3 className="font-display text-sm font-bold">{name}</h3>
+            <span className="text-xs font-bold opacity-75">
               {position}
               <span className="font-normal">
                 {company ? ` - ${company}` : ""}
@@ -43,14 +43,14 @@ const UserReviewCard: React.FC<UserReviewCardProps> = ({
             </span>
           </div>
         </div>
-        <div className="aspect-square h-14 overflow-hidden rounded-full">
+        <div className="hidden w-1/3 md:block">
           {imageCompany ? (
             <Image
               src={`/logos/${imageCompany}`}
               alt={company}
-              width={40}
-              height={40}
-              className="h-14 w-auto"
+              width={50}
+              height={50}
+              className="ml-auto h-12 w-auto"
             />
           ) : (
             ""

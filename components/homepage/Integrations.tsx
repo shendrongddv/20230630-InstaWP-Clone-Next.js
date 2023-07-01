@@ -8,7 +8,7 @@ const Integrations = () => {
         <div className="relative ">
           <div className="z-20 w-full sm:absolute sm:left-0 sm:top-0 sm:w-1/2 md:w-1/3">
             <h2 className="h2 font-display font-bold">Integrations</h2>
-            <p className="mt-3 opacity-75">
+            <p className="mt-3 text-lg opacity-75">
               We have covered the well known and most popular integrations out
               there
             </p>

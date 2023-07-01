@@ -11,14 +11,14 @@ const UserReviews = () => {
         <div className="flex flex-col items-center">
           <h2 className="h2 font-display font-bold">Words of our customers</h2>
           {/* Flex */}
-          <div className="relative mt-8 flex w-full items-center justify-center py-8">
+          <div className="relative mt-8 flex w-full items-center justify-center pt-8 md:py-8">
             {/* ## */}
             <div className="absolute bottom-0 left-0 right-0 top-0 z-10">
-              <div className="flex h-full w-full items-center justify-center">
+              <div className="flex h-full w-full items-start justify-center md:items-center">
                 <Image
                   src={imgBackground}
                   alt="Background"
-                  className="h-full w-auto object-cover"
+                  className="h-auto w-full object-cover md:h-full md:w-auto"
                 />
               </div>
             </div>
