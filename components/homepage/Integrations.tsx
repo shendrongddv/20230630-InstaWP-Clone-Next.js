@@ -6,9 +6,11 @@ const Integrations = () => {
     <section className="section-py px-6">
       <div className="container isolate">
         <div className="relative ">
-          <div className="z-20 w-full sm:absolute sm:left-0 sm:top-0 sm:w-1/2 md:w-1/3">
-            <h2 className="h2 font-display font-bold">Integrations</h2>
-            <p className="mt-3 text-lg opacity-75">
+          <div className="z-20 w-full sm:absolute sm:left-0 sm:top-0 sm:w-1/2 md:w-1/2">
+            <h2 className="h2 font-display font-bold text-primary">
+              Integrations
+            </h2>
+            <p className="mt-4 text-lg md:text-2xl">
               We have covered the well known and most popular integrations out
               there
             </p>

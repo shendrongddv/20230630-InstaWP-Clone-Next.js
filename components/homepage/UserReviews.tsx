@@ -3,13 +3,16 @@ import imgBackground from "../../public/backgrounds/1.svg";
 
 import { reviewsA } from "@/dummy";
 import UserReviewCard from "./UserReviewCard";
+import { Button } from "../ui/button";
 
 const UserReviews = () => {
   return (
     <section className="section-pt px-6">
       <div className="container">
         <div className="flex flex-col items-center">
-          <h2 className="h2 font-display font-bold">Words of our customers</h2>
+          <h2 className="h2 font-display font-bold text-primary">
+            Words of Our Customers
+          </h2>
           {/* Flex */}
           <div className="relative mt-8 flex w-full items-center justify-center pt-8 md:py-8">
             {/* ## */}
@@ -39,6 +42,10 @@ const UserReviews = () => {
               ))}
             </div>
           </div>
+
+          <Button variant="outline" size="lg" className="mt-10 w-full md:w-max">
+            View More
+          </Button>
         </div>
       </div>
     </section>

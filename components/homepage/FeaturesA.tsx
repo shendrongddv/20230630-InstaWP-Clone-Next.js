@@ -5,12 +5,12 @@ import { featuresB } from "@/dummy";
 
 const FeaturesA = () => {
   return (
-    <section className="section-py border px-4 md:px-6">
+    <section className="section-py px-4 md:px-6">
       <div className="container">
         <div className="isolate flex flex-col">
           {/* Col */}
           <div className="z-10 mx-auto -mb-6 flex h-12 w-10/12 items-center justify-center rounded-lg border-2 bg-white md:ml-8 md:w-max md:p-4">
-            <h2 className="text-center text-sm font-bold md:text-base">
+            <h2 className="text-center text-sm font-bold text-primary md:text-base">
               Must Have For Every WordPress Professional
             </h2>
           </div>
@@ -28,10 +28,10 @@ const FeaturesA = () => {
                       className="h-10 w-auto"
                     />
                   </div>
-                  <h3 className="font-display text-base font-semibold md:text-lg">
+                  <h3 className="h4 font-display text-base font-bold text-primary">
                     {item.title}
                   </h3>
-                  <p className="text-sm md:text-base">{item.description}</p>
+                  <p>{item.description}</p>
                 </div>
               ))}
             </div>

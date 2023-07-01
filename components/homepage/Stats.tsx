@@ -3,8 +3,8 @@ const Stats = () => {
     <section className="section-pb px-6">
       <div className="container">
         <div className="flex flex-col items-center">
-          <h2 className="h2 text-center font-display font-bold">
-            Join WordPressers from 100+ countries
+          <h2 className="h2 text-center font-display font-bold text-primary">
+            Join Wordpressers from 100+ Countries
           </h2>
           <p className="mt-3 text-center">
             We are growing by leaps and bounds every. single. day.

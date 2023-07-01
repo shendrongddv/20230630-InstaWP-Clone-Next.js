@@ -12,24 +12,20 @@ const Hero = () => {
             <span className="font-bold">332,962+</span>
             <span>Sites created</span>
           </div>
-          <h1 className="text-center text-5xl font-semibold md:w-3/4 md:text-7xl">
-            Building with WordPress was never this{" "}
-            <span className="text-[#11bf85]">easy!</span>
+          <h1 className="text-center text-4xl font-bold text-[#00231F] md:w-3/4 md:text-6xl md:leading-normal">
+            Building With Wordpress Was Never This{" "}
+            <span className="text-[#11bf85]">Easy!</span>
           </h1>
           <div className="mt-8 flex w-full flex-col items-center justify-center gap-x-6 gap-y-3 md:inline-flex md:flex-row">
-            <Button
-              variant="default"
-              size="lg"
-              className="w-full font-semibold md:w-max"
-            >
-              Try for free
+            <Button variant="default" size="lg" className="w-full md:w-max">
+              Try for Free
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="w-full bg-transparent font-semibold md:w-max"
+              className="w-full bg-transparent md:w-max"
             >
-              Try for free
+              Install Extension
             </Button>
           </div>
           <div className="mt-8 md:mt-10">

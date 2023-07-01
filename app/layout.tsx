@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="text-base text-[#667B79] md:text-lg">
         <Header />
         {children}
         <Footer />

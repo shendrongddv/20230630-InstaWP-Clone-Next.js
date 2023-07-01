@@ -14,16 +14,16 @@ const WhatWeDo = () => {
             >
               {/* ## Col */}
               <div className="w-full md:w-6/12">
-                <h3 className="h3 font-display font-bold">{item.title}</h3>
-                <p className="mt-4 text-base font-medium opacity-75 md:text-lg">
-                  {item.subtitle}
-                </p>
-                <ul className="mt-6 space-y-2">
+                <h3 className="h3 font-display font-bold text-primary">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-lg md:text-xl">{item.subtitle}</p>
+                <ul className="mt-8 space-y-2">
                   {item.sublist?.map((item) => (
                     <li key={item.id} className="flex gap-2">
-                      <CheckCheck className="mt-[2px] h-4 text-[#11bf85] md:mt-[3px] md:h-5" />
-                      <h3 className="text-sm md:text-base">
-                        <span className="font-display font-bold">
+                      <CheckCheck className="mt-[2px] h-4 text-accent md:mt-[3px] md:h-5" />
+                      <h3>
+                        <span className="font-display font-bold text-primary">
                           {item.title}
                         </span>{" "}
                         : {item.subtitle}
