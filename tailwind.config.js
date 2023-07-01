@@ -8,18 +8,7 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    // container: {
-    //   center: true,
-    //   // padding: "2rem",
-    //   // screens: {
-    //   //   "2xl": "1400px",
-    //   // },
-    // },
     extend: {
-      fontFamily: {
-        display: ["var(--font-display)"],
-        body: ["var(--font-body)"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -59,6 +48,10 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        display: ["var(--font-display)"],
+        body: ["var(--font-body)"],
       },
       keyframes: {
         "accordion-down": {

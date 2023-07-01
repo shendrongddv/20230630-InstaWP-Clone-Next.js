@@ -1,16 +1,21 @@
 import "./globals.css";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import {
+  Inter as FontBody,
+  Plus_Jakarta_Sans as FontDisplay,
+} from "next/font/google";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
-const fontDisplay = Plus_Jakarta_Sans({
+const fontDisplay = FontDisplay({
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-display",
 });
 
-const fontBody = Inter({
+const fontBody = FontBody({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-body",
 });
 
