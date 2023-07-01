@@ -11,7 +11,7 @@ const FaqHome = () => {
           </h2>
           <p className="mt-4">
             Can&apos;t find the answer you&apos;re looking for? Reach out to our{" "}
-            <Link href="/" className="font-semibold underline">
+            <Link href="/" className="font-semibold text-primary underline">
               customer support
             </Link>{" "}
             team.

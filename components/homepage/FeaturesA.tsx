@@ -5,7 +5,7 @@ import { featuresB } from "@/dummy";
 
 const FeaturesA = () => {
   return (
-    <section className="section-py px-4 md:px-6">
+    <section className="section-pb px-4 md:px-6">
       <div className="container">
         <div className="isolate flex flex-col">
           {/* Col */}
@@ -16,7 +16,7 @@ const FeaturesA = () => {
           </div>
           {/* Col */}
           <div className="rounded-lg border-2 bg-slate-50 px-4 pb-6 pt-12 md:px-8 md:pb-8 md:pt-14">
-            <div className="grid gap-8 md:grid-cols-3 md:gap-9">
+            <div className="grid gap-8 md:grid-cols-3">
               {featuresB?.map((item) => (
                 <div key={item.id} className="flex w-full flex-col gap-3">
                   <div className="w-max">
