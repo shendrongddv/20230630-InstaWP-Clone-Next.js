@@ -2,6 +2,7 @@ import Image from "next/image";
 import imgBackground from "../../public/backgrounds/1.svg";
 
 import { reviewsA } from "@/dummy";
+import UserReviewCard from "./UserReviewCard";
 
 const UserReviews = () => {
   return (
@@ -10,23 +11,32 @@ const UserReviews = () => {
         <div className="flex flex-col items-center">
           <h2 className="h2 font-display font-bold">Words of our customers</h2>
           {/* Flex */}
-          <div className="relative mt-8 flex w-full items-center justify-center">
+          <div className="relative mt-8 flex w-full items-center justify-center py-8">
             {/* ## */}
             <div className="absolute bottom-0 left-0 right-0 top-0 z-10">
               <div className="flex h-full w-full items-center justify-center">
                 <Image
                   src={imgBackground}
                   alt="Background"
-                  className="h-full w-auto"
+                  className="h-full w-auto object-cover"
                 />
               </div>
             </div>
 
             {/* ## */}
-            <div className="z-20 w-full">
-              <div className="flex w-full border even:justify-end">
-                <div className="h-40 w-40 bg-slate-400"></div>
-              </div>
+            <div className="z-20 w-full space-y-6">
+              {reviewsA?.slice(1).map((item) => (
+                <div key={item.id} className="flex w-full even:justify-end">
+                  <UserReviewCard
+                    name={item.name}
+                    position={item.position}
+                    company={item.company}
+                    imageName={item.imageName}
+                    imageCompany={item.imageCompany}
+                    review={item.review}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

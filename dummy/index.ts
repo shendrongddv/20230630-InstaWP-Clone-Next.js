@@ -368,7 +368,7 @@ export const reviewsA = [
     id: "33fea5b8-d6e7-551d-b7c7-8fb2b92d9cd9",
     name: "Max Ziebell",
     position: "Web Designer",
-    company: "COMPANY",
+    company: "",
     imageName: "Max-Ziebell.webp",
     imageCompany: "",
     review:
@@ -401,7 +401,8 @@ export const reviewsA = [
     company: "NewsletterGlue",
     imageName: "Lesley-Sim.jpg",
     imageCompany: "NewsletterGlue.svg",
-    review: "REVIEW",
+    review:
+      "InstaWP looks awesome and that worked crazy fast, Like really a magic!",
   },
 ];
 
