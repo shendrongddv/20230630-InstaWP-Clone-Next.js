@@ -2,7 +2,7 @@ interface BlogCardProps {}
 
 const BlogCard: React.FC<BlogCardProps> = ({}) => {
   return (
-    <div className="aspect-video w-10/12 flex-shrink-0 border first:ml-6 md:w-1/4">
+    <div className="aspect-video max-w-[360px] flex-shrink-0 border first:ml-6 md:w-1/4">
       <div className="">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae

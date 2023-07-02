@@ -6,7 +6,7 @@ const BlogScroll = () => {
   return (
     <section className="section-py bg-slate-100 md:px-6">
       <div className="container">
-        <ScrollArea className="h-max w-full border pb-6">
+        <ScrollArea className="h-max border pb-6">
           <div className="flex w-full gap-6">
             {reviewsA.map((item) => (
               <BlogCard key={item.id} />
