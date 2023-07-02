@@ -5,9 +5,9 @@ import { SheetDemo } from "./SheetDemo";
 
 const Header = () => {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b bg-[#EBF9F5] md:px-6">
+    <header className="fixed left-0 top-0 z-50 w-full border-b bg-[#EBF9F5] px-6">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           {/* Brand */}
           <Brand />
 

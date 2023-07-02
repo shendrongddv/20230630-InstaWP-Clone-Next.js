@@ -17,12 +17,8 @@ export function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button
-          variant="default"
-          size="icon"
-          className="flex h-12 w-12 items-center justify-center rounded-none"
-        >
-          <MenuIcon className="h-8 text-white" />
+        <Button variant="default" size="icon">
+          <MenuIcon />
         </Button>
       </SheetTrigger>
       <SheetContent className="w-full max-w-md p-6"></SheetContent>
