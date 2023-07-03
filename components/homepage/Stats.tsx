@@ -3,6 +3,12 @@
 import CountUp from "react-countup";
 
 const Stats = () => {
+  const easingFn = function (t: number, b: number, c: number, d: number) {
+    var ts = (t /= d) * t;
+    var tc = ts * t;
+    return b + c * (tc * ts + -5 * ts * ts + 10 * tc + -10 * ts + 5 * t);
+  };
+
   return (
     <section id="stats-counter" className="section-pb px-6">
       <div className="container">
@@ -20,21 +26,51 @@ const Stats = () => {
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
                 <h3 className="font-display text-3xl font-bold">
-                  <CountUp end={99} suffix="%" enableScrollSpy />
+                  <CountUp
+                    end={99.99}
+                    decimals={2}
+                    duration={3}
+                    separator="."
+                    decimal=","
+                    suffix="%"
+                    easingFn={easingFn}
+                    enableScrollSpy
+                    scrollSpyOnce
+                    className="text-primary"
+                  />
                 </h3>
                 <span className="font-semibold opacity-75">Uptime</span>
               </div>
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
                 <h3 className="font-display text-3xl font-bold">
-                  <CountUp end={2000} suffix="+" enableScrollSpy />
+                  <CountUp
+                    end={2000}
+                    duration={6}
+                    separator="."
+                    decimal=","
+                    suffix="+"
+                    easingFn={easingFn}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
                 </h3>
                 <span className="font-semibold opacity-75">Sites / day</span>
               </div>
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
                 <h3 className="font-display text-3xl font-bold">
-                  <CountUp end={15000} suffix="+" enableScrollSpy />
+                  <CountUp
+                    end={15000}
+                    duration={6}
+                    separator="."
+                    decimal=","
+                    suffix="+"
+                    easingFn={easingFn}
+                    enableScrollSpy
+                    scrollSpyOnce
+                    className="text-primary"
+                  />
                 </h3>
                 <span className="font-semibold opacity-75">Users</span>
               </div>
