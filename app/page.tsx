@@ -1,4 +1,3 @@
-import BlogScroll from "@/components/homepage/BlogScroll";
 import BlogSmall from "@/components/homepage/BlogSmall";
 import CallToActionA from "@/components/homepage/CallToActionA";
 import CallToActionB from "@/components/homepage/CallToActionB";
@@ -25,7 +24,6 @@ export default function Home() {
       <Integrations />
       <FaqHome />
       <BlogSmall />
-      <BlogScroll />
       <Stats />
       <CallToActionB />
     </main>

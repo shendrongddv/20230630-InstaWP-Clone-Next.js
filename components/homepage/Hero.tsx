@@ -1,4 +1,7 @@
+"use client";
+
 import { Button } from "../ui/button";
+import CountUp from "react-countup";
 
 import imgAsset from "../../public/instawp-hero-section.jpg";
 import Image from "next/image";
@@ -9,7 +12,9 @@ const Hero = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-8">
           <div className="flex w-max items-center justify-center gap-4 rounded-full bg-[#dff1ed] px-4 py-2">
-            <span className="font-bold">332,962+</span>
+            <span className="font-bold">
+              <CountUp start={100000} end={332962} suffix="+" />
+            </span>
             <span>Sites created</span>
           </div>
           <h1 className="text-center text-4xl font-bold text-[#00231F] md:w-3/4 md:text-6xl md:leading-normal">

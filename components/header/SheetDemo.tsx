@@ -12,6 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
+import MobileNav from "./MobileNav";
 
 export function SheetDemo() {
   return (
@@ -21,7 +22,9 @@ export function SheetDemo() {
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full max-w-md p-6"></SheetContent>
+      <SheetContent className="w-full max-w-md p-6">
+        <MobileNav />
+      </SheetContent>
     </Sheet>
   );
 }

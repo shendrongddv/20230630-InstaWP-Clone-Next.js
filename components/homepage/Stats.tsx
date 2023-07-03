@@ -1,6 +1,10 @@
+"use client";
+
+import CountUp from "react-countup";
+
 const Stats = () => {
   return (
-    <section className="section-pb px-6">
+    <section id="stats-counter" className="section-pb px-6">
       <div className="container">
         <div className="flex flex-col items-center">
           <h2 className="h2 text-center font-display font-bold text-primary">
@@ -15,17 +19,23 @@ const Stats = () => {
             <div className="grid gap-4 sm:grid-cols-3">
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
-                <h3 className="font-display text-3xl font-bold">99.99%</h3>
+                <h3 className="font-display text-3xl font-bold">
+                  <CountUp end={99} suffix="%" enableScrollSpy />
+                </h3>
                 <span className="font-semibold opacity-75">Uptime</span>
               </div>
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
-                <h3 className="font-display text-3xl font-bold">2,000+</h3>
+                <h3 className="font-display text-3xl font-bold">
+                  <CountUp end={2000} suffix="+" enableScrollSpy />
+                </h3>
                 <span className="font-semibold opacity-75">Sites / day</span>
               </div>
               {/* Col */}
               <div className="flex flex-col items-center rounded-lg bg-slate-100 p-6 text-center">
-                <h3 className="font-display text-3xl font-bold">15,000+</h3>
+                <h3 className="font-display text-3xl font-bold">
+                  <CountUp end={15000} suffix="+" enableScrollSpy />
+                </h3>
                 <span className="font-semibold opacity-75">Users</span>
               </div>
             </div>
