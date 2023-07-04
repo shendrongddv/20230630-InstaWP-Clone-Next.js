@@ -53,6 +53,7 @@ const Stats = () => {
                     easingFn={easingFn}
                     enableScrollSpy
                     scrollSpyOnce
+                    className="text-primary"
                   />
                 </h3>
                 <span className="font-semibold opacity-75">Sites / day</span>

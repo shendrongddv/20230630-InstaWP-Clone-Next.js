@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { Button } from "../ui/button";
 import CountUp from "react-countup";
 
-import imgAsset from "../../public/instawp-hero-section.jpg";
-import Image from "next/image";
+import imgAsset from "../../public/instawp-hero-section.png";
+import imgPlay from "../../public/icons/play.svg";
 
 const Hero = () => {
   return (
@@ -34,12 +35,25 @@ const Hero = () => {
             </Button>
           </div>
           <div className="mt-8 md:mt-10">
-            <Image
-              src={imgAsset}
-              loading="eager"
-              alt="Image"
-              className="h-auto w-full"
-            />
+            <div className="relative isolate flex w-full items-center justify-center">
+              {/* Image */}
+              <Image
+                src={imgAsset}
+                loading="eager"
+                alt="Image"
+                className="h-auto w-full"
+              />
+              {/* Play Overlay */}
+              <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+                <div className="heartbeat h-24 w-24 rounded-full bg-slate-200/50 md:h-32 md:w-32"></div>
+              </div>
+              {/* Play */}
+              <Image
+                src={imgPlay}
+                alt="Play Video"
+                className="absolute left-1/2 top-1/2 z-20 h-16 w-full -translate-x-1/2 -translate-y-1/2 md:h-20"
+              />
+            </div>
           </div>
         </div>
       </div>
