@@ -1,7 +1,7 @@
 import { FooterBody } from "./footer-body";
 import { FooterBottom } from "./footer-bottom";
 
-const Footer = () => {
+const Wrapper = () => {
   return (
     <footer className="bg-[#00231F] px-4">
       <div className="container space-y-16 pt-16">
@@ -15,4 +15,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterWrapper;

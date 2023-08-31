@@ -4,7 +4,7 @@ import { NavbarBrand } from "../site-brand";
 import { NavbarButtons } from "./navbar-buttons";
 import { MobileNavbar } from "./mobile-navbar";
 
-const Header = () => {
+const HeaderWrapper = () => {
   return (
     <header className="sticky left-0 top-0 z-50 w-full border-b bg-white px-4">
       <div className="container py-4">
@@ -30,4 +30,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderWrapper;
