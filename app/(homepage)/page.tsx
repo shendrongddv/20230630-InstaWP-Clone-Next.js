@@ -90,10 +90,15 @@ export default function Homepage() {
       {/* Reviews */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              Reviews
-            </h2>
+          <div className="flex flex-col items-center gap-8">
+            {/* Col */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Words of Our Customers
+              </h2>
+            </div>
+
+            {/* Col */}
             <div className="border bg-slate-50 p-4">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -109,10 +114,19 @@ export default function Homepage() {
       {/* Integrations */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              Integrations
-            </h2>
+          <div className="flex flex-col items-center gap-8">
+            {/* Col */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Integrations
+              </h2>
+              <p>
+                We have covered the well known and most popular integrations out
+                there
+              </p>
+            </div>
+
+            {/* Col */}
             <div className="border bg-slate-50 p-4">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -128,10 +142,27 @@ export default function Homepage() {
       {/* FAQ */}
       <section className="bg-slate-50 px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              FAQ
-            </h2>
+          <div className="flex flex-col items-center gap-8">
+            {/* Col */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Frequently Asked Questions
+              </h2>
+              <p>
+                Can&apos;t find the answer you&apos;re looking for? Reach out to
+                our&nbsp;
+                <Link
+                  href="/"
+                  aria-label="Customer Support"
+                  className="font-semibold underline decoration-dotted underline-offset-4"
+                >
+                  customer support
+                </Link>{" "}
+                &nbsp;team.
+              </p>
+            </div>
+
+            {/* Col */}
             <div className="border bg-slate-50 p-4">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -147,10 +178,15 @@ export default function Homepage() {
       {/* Blogs */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              Blogs
-            </h2>
+          <div className="flex flex-col items-center gap-8">
+            {/* Col */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Blogs
+              </h2>
+            </div>
+
+            {/* Col */}
             <div className="border bg-slate-50 p-4">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
