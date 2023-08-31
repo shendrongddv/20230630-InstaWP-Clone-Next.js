@@ -23,7 +23,7 @@ export const CounterStats = () => {
   return (
     <ul className="grid w-full gap-4 sm:grid-cols-3 md:w-4/5">
       {/* Col */}
-      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-4 text-center md:rounded-3xl">
+      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-6 text-center md:rounded-3xl">
         <h3>
           <CountUp
             end={99.99}
@@ -35,13 +35,13 @@ export const CounterStats = () => {
             easingFn={easingFn}
             enableScrollSpy
             scrollSpyOnce
-            className="h2 text-gradient font-extrabold"
+            className="h2 text-gradient font-display font-extrabold"
           />
         </h3>
-        <span className="font-medium text-muted-foreground">Uptime</span>
+        <span className="font-medium">Uptime</span>
       </li>
       {/* Col */}
-      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-4 text-center md:rounded-3xl">
+      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-6 text-center md:rounded-3xl">
         <h3>
           <CountUp
             end={2000}
@@ -52,13 +52,13 @@ export const CounterStats = () => {
             easingFn={easingFn}
             enableScrollSpy
             scrollSpyOnce
-            className="h2 text-gradient font-extrabold"
+            className="h2 text-gradient font-display font-extrabold"
           />
         </h3>
-        <span className="font-medium text-muted-foreground">Sites / day</span>
+        <span className="font-medium">Sites / day</span>
       </li>
       {/* Col */}
-      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-4 text-center md:rounded-3xl">
+      <li className="flex flex-col items-center rounded-xl bg-slate-100 p-6 text-center md:rounded-3xl">
         <h3>
           <CountUp
             end={15000}
@@ -69,10 +69,10 @@ export const CounterStats = () => {
             easingFn={easingFn}
             enableScrollSpy
             scrollSpyOnce
-            className="h2 text-gradient font-extrabold"
+            className="h2 text-gradient font-display font-extrabold"
           />
         </h3>
-        <span className="font-medium text-muted-foreground">Users</span>
+        <span className="font-medium">Users</span>
       </li>
     </ul>
   );

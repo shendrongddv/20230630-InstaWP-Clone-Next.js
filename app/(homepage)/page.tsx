@@ -172,9 +172,7 @@ export default function Homepage() {
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Join WordPressers from 100+ countries
               </h2>
-              <p className="text-lg font-medium text-muted-foreground">
-                We are growing by leaps and bounds every single day.
-              </p>
+              <p>We are growing by leaps and bounds every single day.</p>
             </div>
 
             {/* Col */}
