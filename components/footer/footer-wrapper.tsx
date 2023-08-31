@@ -1,7 +1,7 @@
 import { FooterBody } from "./footer-body";
 import { FooterBottom } from "./footer-bottom";
 
-const Wrapper = () => {
+const FooterWrapper = () => {
   return (
     <footer className="bg-[#00231F] px-4">
       <div className="container space-y-16 pt-16">
