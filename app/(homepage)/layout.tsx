@@ -1,5 +1,6 @@
-import Footer from "../../components/footer/footer";
-import Header from "../../components/header/header";
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
 interface HomepageLayoutProps {
   children: React.ReactNode;
 }
