@@ -1,5 +1,5 @@
 // Components
-import { CounterSiteCreated } from "@/components/site-counter";
+import { CounterSiteCreated, CounterStats } from "@/components/site-counter";
 import { TryNow } from "@/components/try-now";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -166,17 +166,19 @@ export default function Homepage() {
       {/* Counter Stats */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              Counter Stats
-            </h2>
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
+          <div className="flex flex-col items-center gap-8">
+            {/* Col */}
+            <div className="flex flex-col items-center gap-2 text-center">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Join WordPressers from 100+ countries
+              </h2>
+              <p className="text-lg font-medium text-muted-foreground">
+                We are growing by leaps and bounds every single day.
               </p>
             </div>
+
+            {/* Col */}
+            <CounterStats />
           </div>
         </div>
       </section>
