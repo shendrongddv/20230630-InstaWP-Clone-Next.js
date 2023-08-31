@@ -95,7 +95,7 @@ h6 {
 }
 
 .h3 {
-  @apply text-lg leading-snug md:text-xl;
+  @apply text-xl leading-snug md:text-3xl;
 }
 
 .h4 {

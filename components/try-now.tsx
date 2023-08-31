@@ -12,21 +12,21 @@ import { CheckCircle } from "lucide-react";
 export const TryNow = () => {
   return (
     <section className="bg-gradient-to-b from-transparent from-50% to-[#00231F] to-50% px-4 py-16">
-      <div className="container grid overflow-hidden rounded-xl bg-[#005E54] md:grid-cols-2">
+      <div className="container grid overflow-hidden rounded-xl bg-[#005E54] md:grid-cols-2 md:rounded-3xl">
         {/* Col */}
-        <div className="flex flex-col justify-center gap-4 px-4 py-8 md:px-16 md:py-16">
+        <div className="flex flex-col justify-center px-4 py-16 md:px-16">
           {/* # */}
           <span className="text-2xl font-semibold text-[#F3E98D] md:text-[28px]">
             Ready to dive in?
           </span>
 
           {/* # */}
-          <h2 className="font-display text-4xl font-bold text-white md:text-5xl">
+          <h2 className="h2 mt-2 font-display font-extrabold text-white">
             Spin up a test WordPress site
           </h2>
 
           {/* # */}
-          <p className="text-white">
+          <p className="mt-2 text-white">
             Try InstaWP without even creating an account!
           </p>
 
@@ -37,8 +37,8 @@ export const TryNow = () => {
             className={cn(
               buttonVariants({
                 variant: "secondary",
-                size: "default",
-                className: "my-4 font-semibold md:w-max",
+                size: "lg",
+                className: "my-8 w-full font-semibold md:w-max",
               }),
             )}
           >

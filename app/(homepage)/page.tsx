@@ -15,6 +15,8 @@ import iconB from "../../public/icons/icon-2.svg";
 import iconC from "../../public/icons/icon-3.svg";
 import ImgTryToday from "../../public/try-today.svg";
 import ImgIntegrations from "../../public/integration.png";
+import BackgroundCircle from "../../public/background-circle.svg";
+import { ProductFeatures } from "@/components/product-features";
 
 export default function Homepage() {
   return (
@@ -72,9 +74,7 @@ export default function Homepage() {
       {/* Product Features */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex">
-            <h2 className="h2">Product Features</h2>
-          </div>
+          <ProductFeatures />
         </div>
       </section>
       {/* ./ Product Features */}
@@ -94,7 +94,7 @@ export default function Homepage() {
                 it works and whether it&apos;s the right fit for you
               </p>
 
-              <Separator className="my-4" />
+              <Separator className="my-6" />
 
               <ul className="grid gap-2">
                 <li className="flex items-center gap-2">
@@ -117,9 +117,9 @@ export default function Homepage() {
                 className={cn(
                   buttonVariants({
                     variant: "link",
-                    size: "default",
+                    size: "lg",
                     className:
-                      "mt-8 w-full bg-gradient-to-br from-[#18B287] to-[#005E54] px-6 text-white hover:no-underline md:w-max",
+                      "mt-8 w-full bg-gradient-to-br from-[#18B287] to-[#005E54] px-6 font-semibold text-white hover:no-underline md:w-max",
                   }),
                 )}
               >
@@ -141,23 +141,35 @@ export default function Homepage() {
       {/* ./ Try Now */}
 
       {/* Reviews */}
-      <section className="px-4 py-16">
+      <section className="py-16 md:px-4">
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* Col */}
-            <div className="flex flex-col items-center gap-2 text-center">
+            <div className="flex flex-col items-center gap-2 text-center max-md:px-4">
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Words of Our Customers
               </h2>
             </div>
 
             {/* Col */}
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
-              </p>
+            <div className="w-full border bg-[url(/background-circle.svg)] bg-contain bg-center bg-no-repeat max-md:p-4"></div>
+
+            {/* Col */}
+            <div className="max-md:w-full max-md:px-4">
+              <Link
+                href="/"
+                aria-label="View More"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                    className:
+                      "w-full font-semibold hover:no-underline md:w-max md:px-6",
+                  }),
+                )}
+              >
+                View More
+              </Link>
             </div>
           </div>
         </div>
@@ -197,7 +209,7 @@ export default function Homepage() {
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* Col */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 md:text-center">
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Frequently Asked Questions
               </h2>
