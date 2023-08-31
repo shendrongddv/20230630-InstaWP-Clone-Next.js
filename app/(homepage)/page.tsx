@@ -84,7 +84,7 @@ export default function Homepage() {
         <div className="container">
           <div className="flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between">
             {/* Col */}
-            <div className="w-full md:w-5/12 md:py-16">
+            <div className="w-full max-md:pb-16 md:w-5/12 md:py-16">
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Try InstaWP Today!
               </h2>
@@ -167,9 +167,9 @@ export default function Homepage() {
       {/* Integrations */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col md:relative">
             {/* Col */}
-            <div className="flex flex-col items-center gap-2 text-center">
+            <div className="flex flex-col gap-2 md:absolute md:top-0 md:z-10">
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Integrations
               </h2>
@@ -197,7 +197,7 @@ export default function Homepage() {
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* Col */}
-            <div className="flex flex-col items-center gap-2 text-center">
+            <div className="flex flex-col gap-2">
               <h2 className="h2 text-gradient font-display font-extrabold">
                 Frequently Asked Questions
               </h2>
