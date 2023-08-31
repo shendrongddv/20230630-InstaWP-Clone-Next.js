@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 
 import { LogIn, Settings2 } from "lucide-react";
+import { SheetClose } from "../ui/sheet";
 
 export const NavbarButtons = () => {
   return (
@@ -45,36 +46,40 @@ export const NavbarButtons = () => {
 export const MobileNavbarButtons = () => {
   return (
     <>
-      <Link
-        href="login"
-        aria-label="Login"
-        className={cn(
-          buttonVariants({
-            variant: "outline",
-            size: "lg",
-            className: "font-semibold",
-          }),
-        )}
-      >
-        <LogIn className="mr-2 h-4 w-4" />
-        Login
-      </Link>
+      <SheetClose asChild>
+        <Link
+          href="login"
+          aria-label="Login"
+          className={cn(
+            buttonVariants({
+              variant: "outline",
+              size: "lg",
+              className: "",
+            }),
+          )}
+        >
+          <LogIn className="mr-2 h-4 w-4" />
+          Login
+        </Link>
+      </SheetClose>
 
-      <Link
-        href="trials"
-        aria-label="Try for Free"
-        className={cn(
-          buttonVariants({
-            variant: "link",
-            size: "lg",
-            className:
-              "bg-gradient-to-br from-[#18B287] to-[#005E54] font-semibold text-white hover:no-underline",
-          }),
-        )}
-      >
-        <Settings2 className="mr-2 h-4 w-4" />
-        Try for Free
-      </Link>
+      <SheetClose asChild>
+        <Link
+          href="trials"
+          aria-label="Try for Free"
+          className={cn(
+            buttonVariants({
+              variant: "link",
+              size: "lg",
+              className:
+                "bg-gradient-to-br from-[#18B287] to-[#005E54] text-white hover:no-underline",
+            }),
+          )}
+        >
+          <Settings2 className="mr-2 h-4 w-4" />
+          Try for Free
+        </Link>
+      </SheetClose>
     </>
   );
 };

@@ -6,6 +6,7 @@ import { LucideIcon } from "lucide-react";
 
 // Data
 import { dataNavbarLinks } from "@/data/site";
+import { SheetClose } from "../ui/sheet";
 
 export const NavbarLinks = () => {
   return (
@@ -44,18 +45,22 @@ export const MobileNavbarLinks = () => {
             <ul className="my-2 grid gap-2 border-b pb-4">
               {item.links?.map((item) => (
                 <li key={item.id}>
-                  <LinkItemIcon
-                    label={item.label}
-                    url={item.url}
-                    icon={item.icon}
-                  />
+                  <SheetClose asChild>
+                    <LinkItemIcon
+                      label={item.label}
+                      url={item.url}
+                      icon={item.icon}
+                    />
+                  </SheetClose>
                 </li>
               ))}
             </ul>
           </li>
         ) : (
           <li key={item.id}>
-            <LinkItem label={item.label} url={item.url} />
+            <SheetClose asChild>
+              <LinkItem label={item.label} url={item.url} />
+            </SheetClose>
           </li>
         ),
       )}
@@ -80,8 +85,7 @@ const LinkItem = ({ label, url }: TItemLink) => {
         buttonVariants({
           variant: "ghost",
           size: "sm",
-          className:
-            "h-max w-full justify-start px-2 py-2 text-base font-semibold",
+          className: "h-max w-full justify-start px-2 py-2",
         }),
       )}
     >
@@ -107,8 +111,7 @@ const LinkItemIcon = ({ label, url, icon: Icon }: TItemLinkIcon) => {
         buttonVariants({
           variant: "ghost",
           size: "sm",
-          className:
-            "h-max w-full justify-start px-2 py-2 text-base font-semibold",
+          className: "h-max w-full justify-start px-2 py-2",
         }),
       )}
     >
