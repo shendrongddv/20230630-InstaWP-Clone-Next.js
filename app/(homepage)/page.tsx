@@ -1,9 +1,20 @@
-// Components
-import { CounterSiteCreated, CounterStats } from "@/components/site-counter";
-import { TryNow } from "@/components/try-now";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+
+// Components
+import { CounterStats } from "@/components/site-counter";
+import { TryNow } from "@/components/try-now";
+
+// Images
+import iconA from "../../public/icons/icon-1.svg";
+import iconB from "../../public/icons/icon-2.svg";
+import iconC from "../../public/icons/icon-3.svg";
+import ImgTryToday from "../../public/try-today.svg";
+import ImgIntegrations from "../../public/integration.png";
 
 export default function Homepage() {
   return (
@@ -69,18 +80,60 @@ export default function Homepage() {
       {/* ./ Product Features */}
 
       {/* Try Now */}
-      <section className="bg-slate-50 px-4 py-16">
+      <section className="bg-slate-50 px-4">
         <div className="container">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="h2 text-gradient font-display font-extrabold">
-              Tyr Now
-            </h2>
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
+          <div className="flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between">
+            {/* Col */}
+            <div className="w-full md:w-5/12 md:py-16">
+              <h2 className="h2 text-gradient font-display font-extrabold">
+                Try InstaWP Today!
+              </h2>
+
+              <p className="mt-2">
+                Without even creating an account - so you can get a feel for how
+                it works and whether it&apos;s the right fit for you
               </p>
+
+              <Separator className="my-4" />
+
+              <ul className="grid gap-2">
+                <li className="flex items-center gap-2">
+                  <Image src={iconA} alt="Image" className="h-5 w-5" />
+                  Free Forever Account
+                </li>
+                <li className="flex items-center gap-2">
+                  <Image src={iconB} alt="Image" className="h-5 w-5" />
+                  No credit cards required
+                </li>
+                <li className="flex items-center gap-2">
+                  <Image src={iconC} alt="Image" className="h-5 w-5" />
+                  No setup or servers required
+                </li>
+              </ul>
+
+              <Link
+                href="/"
+                aria-label="Get started for free"
+                className={cn(
+                  buttonVariants({
+                    variant: "link",
+                    size: "default",
+                    className:
+                      "mt-8 w-full bg-gradient-to-br from-[#18B287] to-[#005E54] px-6 text-white hover:no-underline md:w-max",
+                  }),
+                )}
+              >
+                Get started for free
+              </Link>
+            </div>
+
+            {/* Col */}
+            <div className="w-full md:w-5/12">
+              <Image
+                src={ImgTryToday}
+                alt="Try InstaWP Today!"
+                className="mx-auto h-auto w-3/4 md:w-full"
+              />
             </div>
           </div>
         </div>
@@ -127,12 +180,12 @@ export default function Homepage() {
             </div>
 
             {/* Col */}
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
-              </p>
+            <div>
+              <Image
+                src={ImgIntegrations}
+                alt="Integrations"
+                className="h-auto w-full"
+              />
             </div>
           </div>
         </div>
