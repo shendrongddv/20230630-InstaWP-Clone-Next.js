@@ -8,6 +8,13 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      // padding: "2rem",
+      screens: {
+        "2xl": "1140px",
+      },
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -50,8 +57,8 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ["var(--font-display)"],
-        body: ["var(--font-body)"],
+        display: "var(--font-display)",
+        body: "var(--font-body)",
       },
       keyframes: {
         "accordion-down": {
@@ -69,5 +76,11 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "@tailwindcss/line-clamp")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
 };

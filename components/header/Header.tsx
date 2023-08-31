@@ -1,29 +1,28 @@
-import Brand from "./Brand";
-import ButtonGroup from "./ButtonGroup";
-import { NavigationMenuDemo } from "./NavigationMenuDemo";
-import { SheetDemo } from "./SheetDemo";
+// Components
+import { NavbarLinks } from "./navbar-links";
+import { NavbarBrand } from "../site-brand";
+import { NavbarButtons } from "./navbar-buttons";
+import { MobileNavbar } from "./mobile-navbar";
 
 const Header = () => {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b bg-[#EBF9F5] px-6">
-      <div className="container">
-        <div className="flex h-16 items-center justify-between">
-          {/* Brand */}
-          <Brand />
+    <header className="sticky left-0 top-0 z-50 w-full border-b bg-white px-4">
+      <div className="container py-4">
+        <div className="flex items-center justify-between gap-4">
+          {/* NavbarBrand */}
+          <NavbarBrand />
 
-          {/* Nav Desktop */}
-          <div className="hidden md:flex">
-            <NavigationMenuDemo />
-          </div>
+          <nav className="hidden lg:flex">
+            {/* NavbarLinks */}
+            <NavbarLinks />
+          </nav>
 
-          {/* Button Groups */}
-          <div className="hidden md:flex">
-            <ButtonGroup />
-          </div>
+          {/* NavbarButtons */}
+          <div className="flex items-center justify-center gap-2">
+            <NavbarButtons />
 
-          {/* Nav Mobile */}
-          <div className="flex md:hidden">
-            <SheetDemo />
+            {/* MobileNavbar */}
+            <MobileNavbar />
           </div>
         </div>
       </div>
