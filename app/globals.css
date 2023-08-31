@@ -91,7 +91,7 @@ h6 {
 }
 
 .h2 {
-  @apply text-2xl leading-snug md:text-4xl;
+  @apply text-2xl leading-snug md:text-[40px];
 }
 
 .h3 {
@@ -100,4 +100,8 @@ h6 {
 
 .h4 {
   @apply leading-snug;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-br from-[#18B287] to-[#005E54] bg-clip-text text-transparent;
 }

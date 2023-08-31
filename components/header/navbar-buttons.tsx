@@ -54,7 +54,7 @@ export const MobileNavbarButtons = () => {
             buttonVariants({
               variant: "outline",
               size: "lg",
-              className: "",
+              className: " col-span-2",
             }),
           )}
         >
@@ -72,7 +72,7 @@ export const MobileNavbarButtons = () => {
               variant: "link",
               size: "lg",
               className:
-                "bg-gradient-to-br from-[#18B287] to-[#005E54] text-white hover:no-underline",
+                "col-span-2 bg-gradient-to-br from-[#18B287] to-[#005E54] text-white hover:no-underline",
             }),
           )}
         >

@@ -19,7 +19,10 @@ export const MobileNavbar = () => {
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex h-full flex-col p-0 max-md:w-full">
+      <SheetContent
+        side="left"
+        className="flex h-full flex-col p-0 max-md:w-4/5"
+      >
         {/* NavbarBrand */}
         <div className="flex h-[70px] items-center border-b px-4 py-4">
           <MobileNavbarBrand />

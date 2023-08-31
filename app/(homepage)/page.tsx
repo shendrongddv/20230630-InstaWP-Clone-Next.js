@@ -1,26 +1,190 @@
 // Components
+import { CounterSiteCreated } from "@/components/site-counter";
 import { TryNow } from "@/components/try-now";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Homepage() {
   return (
     <>
-      <section className="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
-        <h1 className="h1 font-bold">Heading using Font Display</h1>
-        <h3 className="h3 font-semibold">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem aspernatur tenetur accusantium, voluptates dolorum sint
-          modi laborum omnis, soluta excepturi, aliquam neque ut at.
-        </p>
-        <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-          Button
-        </button>
+      {/* Hero */}
+      <section className="bg-slate-50 px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Hero</h2>
+          </div>
+        </div>
       </section>
+      {/* ./ Hero */}
+
+      {/* Awward */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Awward</h2>
+          </div>
+        </div>
+      </section>
+      {/* ./ Awward */}
+
+      {/* Clients */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Clients</h2>
+          </div>
+        </div>
+      </section>
+      {/* ./ Clients */}
+
+      {/* Features */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Features</h2>
+          </div>
+        </div>
+      </section>
+      {/* ./ Features */}
+
+      {/* Highlight Review */}
+      <section className="bg-slate-50 px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Highlight Review</h2>
+          </div>
+        </div>
+      </section>
+      {/* ./ Highlight Review */}
+
+      {/* Product Features */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex">
+            <h2 className="h2">Product Features</h2>
+          </div>
+        </div>
+      </section>
+      {/* ./ Product Features */}
+
+      {/* Try Now */}
+      <section className="bg-slate-50 px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              Tyr Now
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Try Now */}
+
+      {/* Reviews */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              Reviews
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Reviews */}
+
+      {/* Integrations */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              Integrations
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Integrations */}
+
+      {/* FAQ */}
+      <section className="bg-slate-50 px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              FAQ
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ FAQ */}
+
+      {/* Blogs */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              Blogs
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Blogs */}
+
+      {/* Counter Stats */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="h2 text-gradient font-display font-extrabold">
+              Counter Stats
+            </h2>
+            <div className="border bg-slate-50 p-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
+                suscipit veritatis neque iusto doloribus eos culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Counter Stats */}
 
       {/* TryNow */}
       <TryNow />
+      {/* ./TryNow */}
     </>
   );
 }
