@@ -33,7 +33,7 @@ export default function Homepage() {
       {/* ./ Hero */}
 
       {/* Awward */}
-      <section className="px-4">
+      <section className="max-md:p-1 md:p-4">
         <div className="container">
           {/* CardAwwards */}
           <CardAwwards />
@@ -42,10 +42,10 @@ export default function Homepage() {
       {/* ./ Awward */}
 
       {/* Clients */}
-      <section className="px-4 py-16">
+      <section className="px-4 py-8">
         <div className="container">
           <div className="flex flex-col items-center gap-4">
-            <h4 className="text-center font-display text-sm font-semibold text-muted-foreground md:text-base">
+            <h4 className="text-center font-display font-semibold text-muted-foreground">
               Already helping these companies build even faster
             </h4>
 
