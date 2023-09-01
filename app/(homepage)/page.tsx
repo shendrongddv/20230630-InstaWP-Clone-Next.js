@@ -8,15 +8,16 @@ import { Separator } from "@/components/ui/separator";
 // Components
 import { CounterStats } from "@/components/site-counter";
 import { TryNow } from "@/components/try-now";
+import { ProductFeatures } from "@/components/product-features";
+import { CardAwwards } from "@/components/card-awwards";
 
 // Images
 import iconA from "../../public/icons/icon-1.svg";
 import iconB from "../../public/icons/icon-2.svg";
 import iconC from "../../public/icons/icon-3.svg";
+import imgClients from "../../public/clients.png";
 import ImgTryToday from "../../public/try-today.svg";
 import ImgIntegrations from "../../public/integration.png";
-import BackgroundCircle from "../../public/background-circle.svg";
-import { ProductFeatures } from "@/components/product-features";
 
 export default function Homepage() {
   return (
@@ -32,11 +33,10 @@ export default function Homepage() {
       {/* ./ Hero */}
 
       {/* Awward */}
-      <section className="px-4 py-16">
+      <section className="px-4">
         <div className="container">
-          <div className="flex">
-            <h2 className="h2">Awward</h2>
-          </div>
+          {/* CardAwwards */}
+          <CardAwwards />
         </div>
       </section>
       {/* ./ Awward */}
@@ -44,8 +44,14 @@ export default function Homepage() {
       {/* Clients */}
       <section className="px-4 py-16">
         <div className="container">
-          <div className="flex">
-            <h2 className="h2">Clients</h2>
+          <div className="flex flex-col items-center gap-4">
+            <h4 className="text-center font-display text-sm font-semibold text-muted-foreground md:text-base">
+              Already helping these companies build even faster
+            </h4>
+
+            <div className="w-full md:w-4/5">
+              <Image src={imgClients} alt="Clients" className="h-auto w-full" />
+            </div>
           </div>
         </div>
       </section>

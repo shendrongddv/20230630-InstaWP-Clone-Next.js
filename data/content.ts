@@ -1,3 +1,30 @@
+import { BadgeCheck, ShieldCheck, Trophy } from "lucide-react";
+
+// Awwards
+export const dataAwwards = [
+  {
+    id: 1,
+    title: "#2 Product of the Day",
+    subtitle: "Product Hunt",
+    icon: Trophy,
+    media: null,
+  },
+  {
+    id: 2,
+    title: "Money Back Guarantee",
+    subtitle: "14-Day",
+    icon: BadgeCheck,
+    media: null,
+  },
+  {
+    id: 3,
+    title: "Privacy Compliant",
+    subtitle: "Trusted",
+    icon: ShieldCheck,
+    media: null,
+  },
+];
+
 // Product Features
 export const dataProductFeatures = [
   {
