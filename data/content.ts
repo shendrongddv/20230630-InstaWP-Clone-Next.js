@@ -25,6 +25,58 @@ export const dataAwwards = [
   },
 ];
 
+// Features
+export const dataFeatures = [
+  {
+    id: "2277d697-0f13-50e8-b53b-575f6849a6f6",
+    title: "Build & Migrate WordPress Sites",
+    subtitle: null,
+    desc: "Create highly optimized sites from templates, Share with clients and Migrate to any hosting provider.",
+    icon: "feature-1.svg",
+    media: null,
+  },
+  {
+    id: "5d251fe8-96be-505e-ae03-9b52b56ac4ef",
+    title: "Create Staging of Live Sites",
+    subtitle: null,
+    desc: "With our plugin or via API, create 1-click staging copies of your live sites. Push full site back after changes or only sync changes.",
+    icon: "feature-2.svg",
+    media: null,
+  },
+  {
+    id: "52a5e505-0733-547d-b3a2-6a6160f269cd",
+    title: "Setup Demos of Plugins / Themes",
+    subtitle: null,
+    desc: "Create sandbox demos of your plugin, theme or service and boost your conversion by 20%. Easily hook into your crm.",
+    icon: "feature-3.svg",
+    media: null,
+  },
+  {
+    id: "831ebe85-6bce-51b5-bc39-6f3f919cc9f7",
+    title: "Automate QA with Git Integration",
+    subtitle: null,
+    desc: "DESCSelf-service ephemeral infrastructure. Deploy previews automatically for every pull request.RIPTION",
+    icon: "feature-4.svg",
+    media: null,
+  },
+  {
+    id: "6ca560c3-432a-5979-bdde-d7f0465cd61b",
+    title: "Manage Hosting & Live Sites",
+    subtitle: null,
+    desc: "Connect your hosting accounts for 1-click site creation and migration. Remotely manage all client sites in one dashboard.",
+    icon: "feature-5.svg",
+    media: null,
+  },
+  {
+    id: "f5407c0a-4173-53a5-8abf-b9a6c2e93be4",
+    title: "Sell Templates & Hosting (New)",
+    subtitle: null,
+    desc: "Add second source of revenue by monetizing your designs combined with hosting packages.",
+    icon: "feature-6.svg",
+    media: null,
+  },
+];
+
 // Product Features
 export const dataProductFeatures = [
   {

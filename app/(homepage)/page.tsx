@@ -18,6 +18,7 @@ import iconC from "../../public/icons/icon-3.svg";
 import imgClients from "../../public/clients.png";
 import ImgTryToday from "../../public/try-today.svg";
 import ImgIntegrations from "../../public/integration.png";
+import { CardFeatures } from "@/components/card-features";
 
 export default function Homepage() {
   return (
@@ -33,7 +34,7 @@ export default function Homepage() {
       {/* ./ Hero */}
 
       {/* Awward */}
-      <section className="max-md:p-1 md:p-4">
+      <section className="max-md:p-1 md:px-4 md:pt-16">
         <div className="container">
           {/* CardAwwards */}
           <CardAwwards />
@@ -42,7 +43,7 @@ export default function Homepage() {
       {/* ./ Awward */}
 
       {/* Clients */}
-      <section className="px-4 py-8">
+      <section className="px-4 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-4">
             <h4 className="text-center font-display font-semibold text-muted-foreground">
@@ -58,10 +59,24 @@ export default function Homepage() {
       {/* ./ Clients */}
 
       {/* Features */}
-      <section className="px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            <h2 className="h2">Features</h2>
+      <section className="px-1 py-16 md:px-4">
+        <div className="mx-auto w-full rounded-xl border bg-slate-50 px-2 pb-2 md:w-auto md:rounded-3xl md:px-8 md:pb-8">
+          <div className="container flex flex-col">
+            <h2
+              className={cn(
+                buttonVariants({
+                  variant: "outline",
+                  size: "sm",
+                  className:
+                    "w-max -translate-y-1/2 font-display font-semibold max-md:mx-2",
+                }),
+              )}
+            >
+              Must Have for Every WordPress Professional
+            </h2>
+
+            {/* CardFeatures */}
+            <CardFeatures />
           </div>
         </div>
       </section>
