@@ -19,18 +19,17 @@ import imgClients from "../../public/clients.png";
 import ImgTryToday from "../../public/try-today.svg";
 import ImgIntegrations from "../../public/integration.png";
 import { CardFeatures } from "@/components/card-features";
+import { ReviewHighlight } from "@/components/review-highlight";
+import { HomepageHero } from "@/components/homepage-hero";
+import { ReviewUsers } from "@/components/review-users";
+import { HomepageBlogs } from "@/components/homepage-blogs";
+import { HomepageFAQs } from "@/components/homepage-faqs";
 
 export default function Homepage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-slate-50 px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            <h2 className="h2">Hero</h2>
-          </div>
-        </div>
-      </section>
+      <HomepageHero />
       {/* ./ Hero */}
 
       {/* Awward */}
@@ -60,7 +59,7 @@ export default function Homepage() {
 
       {/* Features */}
       <section className="px-1 py-16 md:px-4">
-        <div className="mx-auto w-full rounded-xl border bg-slate-50 px-2 pb-2 md:w-auto md:rounded-3xl md:px-8 md:pb-8">
+        <div className="mx-auto w-auto rounded-xl border bg-slate-50 px-2 pb-2 sm:w-auto md:w-auto md:rounded-3xl md:px-8 md:pb-8">
           <div className="container flex flex-col">
             <h2
               className={cn(
@@ -83,13 +82,7 @@ export default function Homepage() {
       {/* ./ Features */}
 
       {/* Highlight Review */}
-      <section className="bg-slate-50 px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            <h2 className="h2">Highlight Review</h2>
-          </div>
-        </div>
-      </section>
+      <ReviewHighlight />
       {/* ./ Highlight Review */}
 
       {/* Product Features */}
@@ -162,39 +155,7 @@ export default function Homepage() {
       {/* ./ Try Now */}
 
       {/* Reviews */}
-      <section className="py-16 md:px-4">
-        <div className="container">
-          <div className="flex flex-col items-center gap-8">
-            {/* Col */}
-            <div className="flex flex-col items-center gap-2 text-center max-md:px-4">
-              <h2 className="h2 text-gradient font-display font-extrabold">
-                Words of Our Customers
-              </h2>
-            </div>
-
-            {/* Col */}
-            <div className="w-full border bg-[url(/background-circle.svg)] bg-contain bg-center bg-no-repeat max-md:p-4"></div>
-
-            {/* Col */}
-            <div className="max-md:w-full max-md:px-4">
-              <Link
-                href="/"
-                aria-label="View More"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "lg",
-                    className:
-                      "w-full font-semibold hover:no-underline md:w-max md:px-6",
-                  }),
-                )}
-              >
-                View More
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ReviewUsers />
       {/* ./ Reviews */}
 
       {/* Integrations */}
@@ -226,63 +187,11 @@ export default function Homepage() {
       {/* ./ Integrations */}
 
       {/* FAQ */}
-      <section className="bg-slate-50 px-4 py-16">
-        <div className="container">
-          <div className="flex flex-col items-center gap-8">
-            {/* Col */}
-            <div className="flex flex-col gap-2 md:text-center">
-              <h2 className="h2 text-gradient font-display font-extrabold">
-                Frequently Asked Questions
-              </h2>
-              <p>
-                Can&apos;t find the answer you&apos;re looking for? Reach out to
-                our&nbsp;
-                <Link
-                  href="/"
-                  aria-label="Customer Support"
-                  className="font-semibold underline decoration-dotted underline-offset-4"
-                >
-                  customer support
-                </Link>{" "}
-                &nbsp;team.
-              </p>
-            </div>
-
-            {/* Col */}
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomepageFAQs />
       {/* ./ FAQ */}
 
       {/* Blogs */}
-      <section className="px-4 py-16">
-        <div className="container">
-          <div className="flex flex-col items-center gap-8">
-            {/* Col */}
-            <div className="flex flex-col items-center gap-2 text-center">
-              <h2 className="h2 text-gradient font-display font-extrabold">
-                Blogs
-              </h2>
-            </div>
-
-            {/* Col */}
-            <div className="border bg-slate-50 p-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptas facere quae vel, quisquam quis aperiam incidunt fuga
-                suscipit veritatis neque iusto doloribus eos culpa?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomepageBlogs />
       {/* ./ Blogs */}
 
       {/* Counter Stats */}
