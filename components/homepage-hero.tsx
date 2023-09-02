@@ -10,12 +10,12 @@ import { buttonVariants } from "./ui/button";
 import { CounterSiteCreated } from "./site-counter";
 
 // Images
-import imgAsset from "../public/instawp-hero-section.png";
+import imgAsset from "../public/instawp-hero-section.jpg";
 import imgPlay from "../public/icons/play.svg";
 
 export const HomepageHero = () => {
   return (
-    <section className="bg-slate-50 px-4 pt-16">
+    <section className="overflow-hidden bg-slate-50 px-4 pt-16">
       <div className="container">
         <div className="flex flex-col items-center">
           {/* Counter */}
@@ -62,7 +62,7 @@ export const HomepageHero = () => {
           </div>
 
           {/* Assets */}
-          <div className="mt-12 w-full overflow-hidden">
+          <div className="mt-12 w-full overflow-hidden rounded-tl-xl rounded-tr-xl shadow-lg md:rounded-tl-3xl md:rounded-tr-3xl">
             <Image
               src={imgAsset}
               alt="InstaWP Dashboard"

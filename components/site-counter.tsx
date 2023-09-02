@@ -11,7 +11,7 @@ export const CounterSiteCreated = () => {
         buttonVariants({
           variant: "shape",
           size: "sm",
-          className: "gap-2 rounded-full bg-slate-100",
+          className: "gap-2 rounded-full bg-slate-100 px-4",
         }),
       )}
     >
