@@ -29,10 +29,9 @@ export const NavbarButtons = () => {
         aria-label="Try for Free"
         className={cn(
           buttonVariants({
-            variant: "link",
+            variant: "gradient",
             size: "sm",
-            className:
-              "bg-gradient-to-br from-[#18B287] to-[#005E54] px-6 font-semibold text-white hover:no-underline",
+            className: "px-6",
           }),
         )}
       >
@@ -69,10 +68,9 @@ export const MobileNavbarButtons = () => {
           aria-label="Try for Free"
           className={cn(
             buttonVariants({
-              variant: "link",
+              variant: "gradient",
               size: "lg",
-              className:
-                "col-span-2 bg-gradient-to-br from-[#18B287] to-[#005E54] text-white hover:no-underline",
+              className: "col-span-2",
             }),
           )}
         >

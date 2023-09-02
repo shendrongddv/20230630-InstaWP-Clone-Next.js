@@ -6,7 +6,7 @@ import { MobileNavbar } from "./mobile-navbar";
 
 const HeaderWrapper = () => {
   return (
-    <header className="sticky left-0 top-0 z-50 w-full border-b bg-white px-4">
+    <header className="sticky left-0 top-0 z-50 w-full border-b border-input bg-white px-4">
       <div className="container py-4">
         <div className="flex items-center justify-between gap-4">
           {/* NavbarBrand */}
