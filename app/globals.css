@@ -108,9 +108,9 @@ h6 {
 }
 
 .text-gradient {
-  @apply bg-gradient-to-br from-[#005c51] to-[#285d56] bg-clip-text text-transparent;
+  @apply bg-gradient-to-br from-[#005c51] via-[#020617] to-[#285d56] bg-clip-text text-transparent;
 }
 
 .bg-gradient {
-  @apply bg-gradient-to-br from-[#005c51] to-[#285d56];
+  @apply bg-gradient-to-br from-[#005c51] via-[#020617] to-[#285d56];
 }
