@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 import {
   Accordion,
   AccordionContent,
@@ -8,9 +10,6 @@ import {
 } from "@/components/ui/accordion";
 
 import { dataFAQs } from "@/data/content";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "./ui/button";
-import { Separator } from "./ui/separator";
 
 export const HomepageFAQs = () => {
   return (
@@ -27,11 +26,6 @@ export const HomepageFAQs = () => {
             </Link>{" "}
             team.
           </p>
-
-          {/* FAQ */}
-          {/* <div className="mt-10">
-            <FaqAccordion />
-          </div> */}
 
           {/* Test */}
           <Accordion asChild type="single" collapsible>
@@ -69,40 +63,6 @@ export const HomepageFAQs = () => {
   );
 };
 
-const FaqAccordion = () => {
-  return (
-    <Accordion
-      type="single"
-      collapsible
-      className="w-full justify-between gap-x-8 sm:columns-2 md:gap-x-10"
-    >
-      {dataFAQs?.map((item) => (
-        <AccordionItem
-          key={item.id}
-          value={item.id}
-          className="overflow-hidden rounded-3xl border"
-        >
-          <AccordionTrigger
-            className={cn(
-              buttonVariants({
-                variant: "link",
-                size: "default",
-                className:
-                  " justify-between rounded-none text-start font-semibold [&[data-state=open]]:bg-white",
-              }),
-            )}
-          >
-            {item.question}
-          </AccordionTrigger>
-          <AccordionContent className="bg-white px-4">
-            {item.answer}
-          </AccordionContent>
-        </AccordionItem>
-      ))}
-    </Accordion>
-  );
-};
-
 type TSingleItem = {
   id: string;
   question: string;
@@ -113,7 +73,7 @@ const SingleItem = ({ id, question, answer }: TSingleItem) => {
   return (
     <AccordionItem
       value={id}
-      className="overflow-hidden rounded-xl border md:rounded-3xl"
+      className="overflow-hidden rounded-xl border-b-0 bg-secondary-foreground/10 md:rounded-3xl [&[data-state=open]]:bg-secondary-foreground/100"
     >
       <AccordionTrigger
         className={cn(
@@ -121,15 +81,14 @@ const SingleItem = ({ id, question, answer }: TSingleItem) => {
             variant: "link",
             size: "default",
             className:
-              "h-max justify-between rounded-none py-3 text-start font-display text-sm font-semibold hover:no-underline [&[data-state=open]]:bg-secondary-foreground [&[data-state=open]]:text-white",
+              "h-max justify-between rounded-none py-3 text-start font-display font-semibold hover:no-underline [&[data-state=open]]:text-white",
           }),
         )}
       >
         {question}
       </AccordionTrigger>
-      <AccordionContent className="bg-secondary-foreground px-4 text-sm text-white">
-        <Separator className="mb-3 bg-input" />
-        {answer}
+      <AccordionContent>
+        <p className="px-4 text-white">{answer}</p>
       </AccordionContent>
     </AccordionItem>
   );
