@@ -103,7 +103,7 @@ export default function Homepage() {
                 Try InstaWP Today!
               </h2>
 
-              <p className="mt-2">
+              <p className="mt-2 font-medium">
                 Without even creating an account - so you can get a feel for how
                 it works and whether it&apos;s the right fit for you
               </p>
@@ -137,7 +137,7 @@ export default function Homepage() {
                   }),
                 )}
               >
-                Get started for free
+                Get Started for Free
               </Link>
             </div>
 
