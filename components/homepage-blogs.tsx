@@ -1,7 +1,10 @@
-import { dataBlogs } from "@/data/content";
-import { Dot, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { ArrowUpRight, Dot } from "lucide-react";
+
+// Data
+import { dataBlogs } from "@/data/content";
 
 export const HomepageBlogs = () => {
   return (
@@ -13,43 +16,66 @@ export const HomepageBlogs = () => {
           </h2>
 
           {/* # */}
-          <div className="grid w-full gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <ul className="grid w-full gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
             {/* Col */}
             {dataBlogs?.map((item) => (
-              <div
+              <BlogCard
                 key={item.id}
-                className="overflow-hidden rounded-xl shadow md:rounded-3xl"
-              >
-                <div className="overflow-hidden">
-                  <Image
-                    src={`/blogs/${item.image}`}
-                    alt={item.title}
-                    width={600}
-                    height={300}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="p-4 md:p-6">
-                  <div className="flex items-center gap-1 text-xs font-medium">
-                    <span>{item.author}</span>
-                    <Dot size={16} />
-                    <span>{item.date}</span>
-                  </div>
-                  <Link href={item.href} className="group relative">
-                    <h3 className="h4 mt-3 line-clamp-2 font-display font-bold text-primary group-hover:underline">
-                      {item.title}
-                      <MoveUpRight
-                        size={16}
-                        className="absolute bottom-1 right-0 opacity-75"
-                      />
-                    </h3>
-                  </Link>
-                </div>
-              </div>
+                title={item.title}
+                author={item.author}
+                date={item.date}
+                href={item.href}
+                image={item.image}
+              />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>
+  );
+};
+
+type TBlogCard = {
+  title: string;
+  author: string;
+  date: string;
+  href: string;
+  image: string;
+};
+
+const BlogCard = ({ title, author, date, href, image }: TBlogCard) => {
+  return (
+    <li className="group overflow-hidden rounded-xl border transition duration-300 hover:shadow-lg md:rounded-3xl">
+      <div className="overflow-hidden">
+        <Image
+          src={`/blogs/${image}`}
+          alt={title}
+          width={600}
+          height={300}
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-110"
+        />
+      </div>
+      <div className="space-y-4 p-4">
+        <div className="flex items-center gap-1 text-xs text-muted-foreground">
+          <span>{author}</span>
+          <Dot size={16} />
+          <span>{date}</span>
+        </div>
+
+        <div className="flex items-end justify-between gap-4">
+          <Link
+            href={href}
+            aria-label={title}
+            className="h4 text-gradient line-clamp-2 w-11/12 text-xl font-bold"
+          >
+            {title}
+          </Link>
+
+          <Link href={href} aria-label={title} className="">
+            <ArrowUpRight className="h-6 w-6 text-secondary-foreground" />
+          </Link>
+        </div>
+      </div>
+    </li>
   );
 };

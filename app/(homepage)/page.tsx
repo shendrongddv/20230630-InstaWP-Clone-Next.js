@@ -33,7 +33,7 @@ export default function Homepage() {
       {/* ./ Hero */}
 
       {/* Awward */}
-      <section className="max-md:p-1 md:px-4 md:pt-16">
+      <section className="max-md:p-1 md:px-6 md:pt-16">
         <div className="container">
           {/* CardAwwards */}
           <CardAwwards />
@@ -42,7 +42,7 @@ export default function Homepage() {
       {/* ./ Awward */}
 
       {/* Clients */}
-      <section className="px-4 py-16">
+      <section className="px-6 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-4">
             <h4 className="text-center font-display font-semibold text-muted-foreground">
@@ -58,7 +58,7 @@ export default function Homepage() {
       {/* ./ Clients */}
 
       {/* Features */}
-      <section className="px-1 py-16 md:px-4">
+      <section className="px-1 py-16 md:px-6">
         <div className="mx-auto w-auto rounded-xl border bg-slate-50 px-2 pb-2 sm:w-auto md:w-auto md:rounded-3xl md:px-8 md:pb-8">
           <div className="container flex flex-col">
             <h2
@@ -86,7 +86,7 @@ export default function Homepage() {
       {/* ./ Highlight Review */}
 
       {/* Product Features */}
-      <section className="px-4 py-16">
+      <section className="px-6 py-16">
         <div className="container">
           <ProductFeatures />
         </div>
@@ -94,7 +94,7 @@ export default function Homepage() {
       {/* ./ Product Features */}
 
       {/* Try Now */}
-      <section className="bg-slate-50 px-4">
+      <section className="bg-slate-50 px-6">
         <div className="container">
           <div className="flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between">
             {/* Col */}
@@ -154,12 +154,12 @@ export default function Homepage() {
       </section>
       {/* ./ Try Now */}
 
-      {/* Reviews */}
+      {/* User Reviews */}
       <ReviewUsers />
-      {/* ./ Reviews */}
+      {/* ./ User Reviews */}
 
       {/* Integrations */}
-      <section className="px-4 py-16">
+      <section className="px-6 py-16">
         <div className="container">
           <div className="flex flex-col md:relative">
             {/* Col */}
@@ -195,7 +195,7 @@ export default function Homepage() {
       {/* ./ Blogs */}
 
       {/* Counter Stats */}
-      <section className="px-4 py-16">
+      <section className="px-6 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* Col */}

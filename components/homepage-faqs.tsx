@@ -13,7 +13,7 @@ import { dataFAQs } from "@/data/content";
 
 export const HomepageFAQs = () => {
   return (
-    <section className="bg-gray-50 px-4 py-16">
+    <section className="bg-gray-50 px-6 py-16">
       <div className="container">
         <div className="flex flex-col">
           <h2 className="h2 text-gradient font-display font-extrabold">

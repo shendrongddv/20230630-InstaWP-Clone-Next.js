@@ -13,10 +13,10 @@ import { dataReviews } from "@/data/content";
 
 export const ReviewUsers = () => {
   return (
-    <section className="section px-x pt-16">
+    <section className="section px-6 pt-16">
       <div className="container">
         <div className="flex flex-col items-center">
-          <h2 className="h2 text-gradient font-display font-extrabold">
+          <h2 className="h2 text-gradient text-center font-display font-extrabold">
             Words of Our Customers
           </h2>
           {/* Flex */}

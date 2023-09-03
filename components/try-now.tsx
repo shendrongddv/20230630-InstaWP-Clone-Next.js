@@ -11,7 +11,7 @@ import { CheckCircle } from "lucide-react";
 
 export const TryNow = () => {
   return (
-    <section className="bg-gradient-to-b from-transparent from-50% to-[#00231F] to-50% px-4 py-16">
+    <section className="bg-gradient-to-b from-transparent from-50% to-[#00231F] to-50% px-6 py-16">
       <div className="container grid overflow-hidden rounded-xl bg-[#005E54] md:grid-cols-2 md:rounded-3xl">
         {/* Col */}
         <div className="flex flex-col justify-center px-4 py-16 md:px-16">

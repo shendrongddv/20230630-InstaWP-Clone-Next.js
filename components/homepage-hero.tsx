@@ -15,7 +15,7 @@ import imgPlay from "../public/icons/play.svg";
 
 export const HomepageHero = () => {
   return (
-    <section className="overflow-hidden bg-slate-50 px-4 pt-16">
+    <section className="overflow-hidden bg-slate-50 px-6 pt-16">
       <div className="container">
         <div className="flex flex-col items-center">
           {/* Counter */}
