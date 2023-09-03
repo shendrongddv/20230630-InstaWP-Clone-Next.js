@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 // Components
 import { CounterStats } from "@/components/site-counter";
 import { TryNow } from "@/components/try-now";
-import { ProductFeatures } from "@/components/product-features";
+import { TechnicalFeatures } from "@/components/technical-features";
 import { CardAwwards } from "@/components/card-awwards";
 
 // Images
@@ -18,12 +18,12 @@ import iconC from "../../public/icons/icon-3.svg";
 import imgClients from "../../public/clients.png";
 import ImgTryToday from "../../public/try-today.svg";
 import ImgIntegrations from "../../public/integration.png";
-import { CardFeatures } from "@/components/card-features";
 import { ReviewHighlight } from "@/components/review-highlight";
 import { HomepageHero } from "@/components/homepage-hero";
 import { ReviewUsers } from "@/components/review-users";
 import { HomepageBlogs } from "@/components/homepage-blogs";
 import { HomepageFAQs } from "@/components/homepage-faqs";
+import { ProductFeatures } from "@/components/product-features";
 
 export default function Homepage() {
   return (
@@ -57,41 +57,21 @@ export default function Homepage() {
       </section>
       {/* ./ Clients */}
 
-      {/* Features */}
-      <section className="px-1 py-16 md:px-6">
-        <div className="mx-auto w-auto rounded-xl border bg-slate-50 px-2 pb-2 sm:w-auto md:w-auto md:rounded-3xl md:px-8 md:pb-8">
-          <div className="container flex flex-col">
-            <h2
-              className={cn(
-                buttonVariants({
-                  variant: "outline",
-                  size: "sm",
-                  className:
-                    "w-max -translate-y-1/2 font-display font-semibold max-md:mx-2",
-                }),
-              )}
-            >
-              Must Have for Every WordPress Professional
-            </h2>
-
-            {/* CardFeatures */}
-            <CardFeatures />
-          </div>
-        </div>
-      </section>
-      {/* ./ Features */}
+      {/* Product Features */}
+      <ProductFeatures />
+      {/* ./ Product Features */}
 
       {/* Highlight Review */}
       <ReviewHighlight />
       {/* ./ Highlight Review */}
 
-      {/* Product Features */}
+      {/* Technical Features */}
       <section className="px-6 py-16">
         <div className="container">
-          <ProductFeatures />
+          <TechnicalFeatures />
         </div>
       </section>
-      {/* ./ Product Features */}
+      {/* ./ Technical Features */}
 
       {/* Try Now */}
       <section className="bg-slate-50 px-6">
