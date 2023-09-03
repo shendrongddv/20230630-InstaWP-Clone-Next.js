@@ -81,14 +81,14 @@ const SingleItem = ({ id, question, answer }: TSingleItem) => {
             variant: "link",
             size: "default",
             className:
-              "h-max justify-between rounded-none py-3 text-start font-display font-semibold hover:no-underline [&[data-state=open]]:text-white",
+              "h-max justify-between rounded-none py-3 text-start font-display text-base font-semibold hover:no-underline [&[data-state=open]]:text-white",
           }),
         )}
       >
         {question}
       </AccordionTrigger>
       <AccordionContent>
-        <p className="px-4 text-white">{answer}</p>
+        <p className="px-4 text-base text-white">{answer}</p>
       </AccordionContent>
     </AccordionItem>
   );
